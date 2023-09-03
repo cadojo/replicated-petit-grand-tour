@@ -1,0 +1,36 @@
+project:
+  type: manuscript
+
+manuscript:
+  article: index.qmd
+
+date: today
+
+bibliography: references.bib
+
+author: 
+  - name: Joseph D. Carpinelli
+
+format:
+  html:
+    comments:
+      hypothesis: true
+    citations-hover: true
+    crossrefs-hover: true
+    toc: true
+    toc-location: left
+    title-block-style: manuscript
+    title-block-banner: true
+    title-block-banner-color: "#3b396d"
+    header-includes: |
+      <meta name="theme-color" content="#3b396d"/>
+  exploratory-pdf: 
+    output-file: replicated-petit-grand-tour.pdf
+  ipynb: 
+    output-file: replicated-petit-grand-tour.ipynb
+  
+execute:
+  freeze: auto
+
+
+
